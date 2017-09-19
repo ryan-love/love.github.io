@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Festival Infomation - MaccFest</title>
+        <meta name="description" content="A new festival to improve your life">
+        <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico.png">
+
+        <style type="text/css">
+
+            #map {
+                width: 100%;
+                height: 500px;
+            }
+
+        </style>
+
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js" key=AIzaSyBtROZ72rk1iYpjz8M4H9KrMk2X0RV-cZw></script>
+
+        <script type="text/javascript">
+
+            google.maps.event.addDomListener(window, 'load', init);
+
+            function init() {
+
+                var mapOptions = {
+
+                    zoom: 11,
+
+                    center: new google.maps.LatLng(53.2523547, -2.1379345),
+
+                    styles: [
+                        {
+                            "featureType": "all",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "saturation": 36
+                                }, {
+                                    "color": "#000000"
+                                }, {
+                                    "lightness": 40
+                                }
+                            ]
+                        }, {
+                            "featureType": "all",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                }, {
+                                    "color": "#000000"
+                                }, {
+                                    "lightness": 16
+                                }
+                            ]
+                        }, {
+                            "featureType": "all",
+                            "elementType": "labels.icon",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        }, {
+                            "featureType": "administrative",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#000000"
+                                }, {
+                                    "lightness": 20
+                                }
+                            ]
+                        }, {
+                            "featureType": "administrative",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#ff00cc"
+                                }, {
+                                    "lightness": 17
+                                }, {
+                                    "weight": 1.2
+                                }
+                            ]
+                        }, {
+                            "featureType": "administrative",
+                            "elementType": "labels",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        }, {
+                            "featureType": "administrative",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                }
+                            ]
+                        }, {
+                            "featureType": "administrative.country",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        }, {
+                            "featureType": "administrative.country",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                }, {
+                                    "color": "#ff00cc"
+                                }, {
+                                    "weight": "2.33"
+                                }
+                            ]
+                        }, {
+                            "featureType": "administrative.province",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#0fc7ff"
+                                }
+                            ]
+                        }, {
+                            "featureType": "administrative.province",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "weight": "2.24"
+                                }, {
+                                    "lightness": "12"
+                                }, {
+                                    "saturation": "4"
+                                }, {
+                                    "visibility": "on"
+                                }, {
+                                    "color": "#ff00cc"
+                                }
+                            ]
+                        }, {
+                            "featureType": "administrative.province",
+                            "elementType": "labels.text",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                }, {
+                                    "color": "#0fc7ff"
+                                }
+                            ]
+                        }, {
+                            "featureType": "administrative.province",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        }, {
+                            "featureType": "administrative.province",
+                            "elementType": "labels.icon",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        }, {
+                            "featureType": "landscape",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#000000"
+                                }, {
+                                    "lightness": 20
+                                }
+                            ]
+                        }, {
+                            "featureType": "landscape.natural.landcover",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "color": "#ff0000"
+                                }
+                            ]
+                        }, {
+                            "featureType": "landscape.natural.landcover",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                }, {
+                                    "color": "#000000"
+                                }
+                            ]
+                        }, {
+                            "featureType": "landscape.natural.terrain",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "color": "#63ff2b"
+                                }
+                            ]
+                        }, {
+                            "featureType": "poi",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        }, {
+                            "featureType": "poi",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#000000"
+                                }, {
+                                    "lightness": 21
+                                }
+                            ]
+                        }, {
+                            "featureType": "road.highway",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "hue": "#ff0000"
+                                }, {
+                                    "visibility": "off"
+                                }
+                            ]
+                        }, {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#000000"
+                                }, {
+                                    "lightness": 17
+                                }
+                            ]
+                        }, {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#000000"
+                                }, {
+                                    "lightness": 29
+                                }, {
+                                    "weight": 0.2
+                                }
+                            ]
+                        }, {
+                            "featureType": "road.arterial",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "color": "#ff0000"
+                                }, {
+                                    "visibility": "off"
+                                }
+                            ]
+                        }, {
+                            "featureType": "road.arterial",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#000000"
+                                }, {
+                                    "lightness": 18
+                                }
+                            ]
+                        }, {
+                            "featureType": "road.local",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#000000"
+                                }, {
+                                    "lightness": 16
+                                }
+                            ]
+                        }, {
+                            "featureType": "transit",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#000000"
+                                }, {
+                                    "lightness": 19
+                                }
+                            ]
+                        }, {
+                            "featureType": "water",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "hue": "#ff0000"
+                                }, {
+                                    "visibility": "simplified"
+                                }
+                            ]
+                        }, {
+                            "featureType": "water",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#0f252e"
+                                }, {
+                                    "lightness": 17
+                                }
+                            ]
+                        }, {
+                            "featureType": "water",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#0fc7ff"
+                                }
+                            ]
+                        }
+                    ]
+                };
+
+                var mapElement = document.getElementById('map');
+
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(53.2523547, -2.1379345),
+                    map: map,
+                    title: 'MaccFest'
+                });
+            }
+        </script>
+
+    </head>
+    <body >
+
+        <div class="header">
+
+            <img src="maccfest.png" alt="MaccFest Logo">
+            <h1>
+                Festival Infomation
+            </h1>
+
+        </div>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <font color="#ec3f8c">Home</font>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="line-up.html">
+                            <font color="#39b1c6">Festival Line-Up</font>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="info.html">
+                            <font color="#1fd26a">Festival Infomation</font>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
+
+        <div class="p2">
+            <h1>MaccFest</h1>
+            <p>
+                MaccFest is a new up and coming festival, which is arriving in Macclesfield. This new festival will show case, many bands and artist in the music industry.
+                <br><br>The Festival will be running from December 26th - December 31st. To usher in the new year.<br>
+                We hope you can attend
+                <br><br>
+                MaccFest
+
+            </p>
+        </div>
+
+        <div class="p1">
+            <h1>Do you Know Where Your Going?</h1>
+            <p>
+                If you need to find you way to the location, then we have a Google Map for you to find the location and make it to the festival, as quick as possible (making sure you miss the traffic) to enjoy the great acts, that will be playing all your favourite
+                songs.
+
+            </p>
+        </div>
+
+
+
+        <div id="map"></div>
+
+        <div class="p3">
+            <h1>Contact Infomation</h1>
+            <p>
+                Telephone:555-10101-555<br><br>
+                E-mail:MaccFest@Festival.com<br><br>
+                Address:Park Ln, Macclesfield SK11 8LF<br><br>
+
+            </p>
+
+        </div>
+        <div class="Form">
+        <form method="post" action="contact.cgi">
+            <div class="name">
+                Name <input name="name" type="text" placeholder="Your Name e.g Bill Gates" autofocus="" required="required">
+            </div>
+            <br><br>
+            <div class="mail">
+            E-Mail <input name="mail" type="email" placeholder="Your E-Mail e.g Bill@microsoft.com" required="required">
+            </div>
+            <br><br>
+            <div class="Comment">
+            Comment <input name="comment" type="text" placeholder="Your Comment e.g I own Microsoft" required="required">
+            </div>
+            <br><br>
+            <input name="submit" type="submit" value="Submit">
+            </form>
+
+
+            <script>
+            function getForm(){
+                document.getElementsByName("name").submit;
+            }
+
+            </script>
+
+
+        </div>
+
+        <footer>
+            <h2>MaccFest LEGAL</h2>
+            <p>
+                all the infomation on this website is for educational use and any content that is used isnt for commerical use SO DONT SUE
+            </p>
+
+        </footer>
+    </body>
+
+</html>

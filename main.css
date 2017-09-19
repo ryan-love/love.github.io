@@ -1,0 +1,367 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+html {
+    -webkit-font-smoothing: antialiased;
+    font-family: Open Sans;
+}
+
+body {
+    background: #25242c;
+    color: #f4f4f4;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    margin: 0;
+    max-width: 100%;
+    padding: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #f4f4f4;
+    font-weight: 500;
+    line-height: 80px
+}
+
+.p1 {
+    background: #ec3f8c;
+    text-align: center;
+    padding: 60px;
+    font-size: 18px;
+    margin: -35px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.p3 {
+    background: #1fd26a;
+    text-align: center;
+    padding: 60px;
+    font-size: 18px;
+    margin: -35px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.p2 {
+    background: #39b1c6;
+    text-align: center;
+    padding: 60px;
+    font-size: 18px;
+    margin: -35px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.p2m {
+    background: #39b1c6;
+    padding: 60px;
+    font-size: 18px;
+    margin: -35px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.nav {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 22px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #25242c;
+}
+
+li {
+    display: inline-block;
+    align-content: center;
+    float: center;
+    margin: 0px;
+}
+
+li a {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 30px;
+}
+
+li a:hover {
+    color: #dedede;
+}
+
+img {
+    height: 100px;
+    width: 120px;
+}
+
+.header img {
+    float: left;
+    width: 150px;
+    height: 100px;
+}
+
+.header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+}
+
+.header {}
+
+.c2c {
+    position: relative;
+    width: 100%;
+}
+
+.c2c img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.daftPunk {
+    position: relative;
+    width: 100%;
+}
+
+.daftPunk img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.gambino {
+    position: relative;
+    width: 100%;
+}
+
+.p4 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    font-size: 50px;
+    color: #ec3f8c
+}
+
+.p5 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    font-size: 50px;
+    color: #ec3f8c
+}
+
+.p6 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    font-size: 50px;
+    color: #ec3f8c
+}
+
+.gambino img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+footer {
+    background: #25242c;
+    font-size: 12px;
+    color: #f3f3f3;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 25px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 22px;
+    text-align: center;
+}
+
+audio {
+    transition: all 0.5s linear;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 7px 7px 7px 7px;
+    align-content: left;
+}
+
+audio:hover, audio:focus, audio:active {
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+.audioC2C {
+    overflow: hidden;
+    align-content: center;
+}
+
+.audioCG {
+    overflow: hidden;
+    align-content: center;
+}
+
+.audioDF {
+    overflow: hidden;
+    align-content: center;
+}
+
+.p2m h2 {
+    text-align: center;
+    margin: -10px;
+}
+
+.audioCGimg {
+    width: 100%;
+}
+
+.audioCGimg img {
+    width: 300px;
+    height: 150px;
+}
+
+.audioDPimg {
+    width: 100%;
+}
+
+.audioDPimg img {
+    width: 300px;
+    height: 150px;
+}
+
+.audioC2Cimg {
+    width: 100%;
+}
+
+.audioC2Cimg img {
+    width: 300px;
+    height: 150px;
+}
+
+.audioCGimg:active {
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.4);
+    transform:
+}
+
+.idCard1 {
+    text-align: right;
+    background: #39b1aa;
+    padding-top: 10px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 7px 7px 7px 7px;
+    margin-bottom: 10px;
+}
+
+.idCard1:hover {
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+.idCard1 img {
+    margin-top:
+}
+
+.idCard1 p {
+    text-align: left;
+    float: left;
+}
+
+.idCard2 {
+    text-align: left;
+    background: #39b1aa;
+    padding-bottom: -10px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 7px 7px 7px 7px;
+    margin-top: 25px;
+}
+
+.idCard2:hover {
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+.idcard2 img {
+    margin-left: 20px
+}
+
+.idCard2 p {
+    text-align: right;
+    float: right
+}
+
+#map {
+    height: 500px;
+}
+
+.hide {
+    height: 100%;
+}
+
+@keyframes hideMap {
+    0% {
+        height: 500px;
+    }
+    100% {
+        height: 0;
+    }
+}
+
+.ng-hide {
+    animation: 2s hideMap;
+}
+.Form{
+    text-align: center;
+    background-color: #d41f1f;
+    font-size: 30px;
+}
+.name input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.mail input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.Comment input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.Tickets{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    background-color: #d41f1f;
+}
+.submit{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #25242c;
+    border: 1px solid tranparent;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+

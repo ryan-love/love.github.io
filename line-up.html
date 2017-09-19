@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Festival Line-Up - MaccFest</title>
+        <meta name="description" content="A new festival to improve your life">
+        <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico.png">
+    </head>
+    <body>
+        <div class="header">
+
+            <img src="maccfest.png" alt="MaccFest Logo">
+            <h1>
+                Festival Line-Up
+            </h1>
+
+        </div>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <font color="#ec3f8c">Home</font>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="line-up.html">
+                            <font color="#39b1c6">Festival Line-Up</font>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="info.html">
+                            <font color="#1fd26a">Festival Infomation</font>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
+
+        <div class="gambino">
+
+            <img src="NewGambinoGreen.jpg" alt="Childish Gambino Cover Image">
+            <div class="p4">
+            <li>
+                <a href="gambino.html">Childish Gambino</a>
+            </li>
+        </div>
+
+    </div>
+
+    <div class="c2c">
+
+        <img src="c2cPink.jpg" alt="C2C Cover Image">
+        <div class="p5">
+            <li>
+                <a href="c2c.html">C2C</a>
+            </li>
+        </div>
+
+    </div>
+
+    <div class="daftPunk">
+
+        <img src="Daft%20PunkBlue.jpg" alt="Daft Punk Cover Image">
+        <div class="p6">
+            <li>
+                <a href="daftPunk.html">Daft Punk</a>
+            </li>
+        </div>
+
+    </div>
+      <div class="Tickets">
+    <h1>Buy Your Maccfest Tickets Here</h1>
+        <p>Monday £15</p>
+          <p>Tuesday £15</p>
+          <p>Wednesday £15</p>
+          <p>Thursday £15</p>
+          <p>Friday £15</p>
+          <p>Saturday £15</p>
+          <p>Sunday £15</p>
+          <p>Week Pass £85</p>
+		<br>
+		<br>
+		<button onclick="purchaseTickets()">Purchase Tickets</button>
+        </div>
+        
+		<script>
+		function purchaseTickets(){
+            Monday = 15.00
+            Tuesday = 15.00
+            Wednesday = 15.00
+            Thursday = 15.00
+            Friday = 15.00
+			Saturday = 15.00
+			Sunday = 15.00
+			Week = 85.00
+			Ticket=prompt("Choose Your Day (Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday or a Week Pass)", "")
+			document.write("You have purchased ")
+            if (Ticket == "Monday")
+				{document.write("A Monday ticket to Maccfest 2016: &#163;" + Monday)
+				total = Monday}
+                else
+                if (Ticket == "Tuesday")
+				{document.write("A Tuesday ticket to Maccfest 2016: &#163;" + Tuesday)
+				total = Tuesday}
+                else
+                if (Ticket == "Wednesday")
+				{document.write("A Wednesday ticket to Maccfest 2016: &#163;" + Wednesday)
+				total = Wednesday}
+                else
+                if (Ticket == "Thursday")
+				{document.write("A Thursday ticket to Maccfest 2016: &#163;" + Thursday)
+				total = Thursday}
+                else
+                if (Ticket == "Friday")
+				{document.write("A Friday ticket to Maccfest 2016: &#163;" + Friday)
+				total = Friday}
+                else
+			    if (Ticket=="Saturday")
+				{document.write("A Saturday ticket to Maccfest 2016: &#163;"   + Saturday)
+				total = Saturday}
+				else 
+				if (Ticket == "Sunday")
+				{document.write("A Sunday ticket to Maccfest 2016: &#163;" + Sunday)
+				total = Sunday}
+				else 
+				if (Ticket == "Week")
+				{document.write("A Full Week ticket to Maccfest 2016: &#163;" + Week)
+				total = Week}
+				else
+				{document.write("Nothing")
+					total = 0
+					}
+					
+			document.write("<br>Total to pay is &#163;" + total)
+			if (total != 0){
+				alert("Are You Ready To Input Your Details?")
+				name = prompt("Please Input Your Name", "")
+				dob = prompt("Please Input Your Date Of Birth", "")
+				ccnum = prompt("Please Input Your Credit Card Infomation", "")
+				document.write("<br><br>Customer Details: <br> Name: " + name + "<br>Date of Birth: " + dob + "<br>Card Number: " + ccnum)
+				alert("Thank You For Your Purchase Of Your MaccFest Ticket/s")
+				}
+		}
+		</script>
+		
+		
+		
+		
+
+</body>
+
+    <footer>
+        <h2>MaccFest LEGAL</h2>
+        <p>
+            all the infomation on this website is for educational use and any content that is used isnt for commerical use SO DONT SUE
+        </p>
+
+    </footer>
+</body>
+</html>
